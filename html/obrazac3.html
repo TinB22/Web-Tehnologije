@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Obrazac</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Obrazac, muzej, html">
+    <meta name="author" content="Tin Barbarić">
+    <link rel="stylesheet" type="text/css" href="/css/tbarbaric22.css">
+    <link rel="stylesheet" type="text/css" href="/css/smartphone.css">
+</head>
+<body>
+        <header class="noP">
+            <a id="logoPocetna" href="/"><img src="/slike/logo.png" alt="porec_logo"></a>
+            <h1>Prirodoslovni muzej Poreč</h1>
+        </header>
+        <nav class="noP">
+            <ul>
+                <li><a href="/">Početna stranica</a></li>
+                <li><a href="/oau">O autoru</a></li>
+                <li><a href="/dok">Dokumentacija</a></li>
+                <li><a href="/gal">Galerija</a></li>
+                <li><a href="/det">Detalji</a></li>
+                <li><a href="/ob2">Obrazac validacije</a></li>
+                <li><a class="trenutno" href="">Obrazac izložba</a></li>
+                <li><a href="/popis">Popis</a></li>
+                <li><a href="/OWT/izlozba">REST servis</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="omz">
+                <form id="ob3" action="/owt/izlozba" method="POST">
+                    <label for="naziv">Naziv primjerka:</label><br>
+                    <input type="text" id="naziv" name="naziv"><br>
+                    <label for="opis">Opis:</label><br>
+                    <textarea id="opis" name="opis"></textarea><br>
+                    <label for="godina">Godina proizvodnje:</label><br>
+                    <input type="text" id="godina" name="godina"><br>
+                    <label for="tip">Kategorija:</label><br>
+                    <input type="text" id="tip" name="tip"><br><br>
+                    <input type="submit" value="Predaj upit">
+                    <input type="reset" value="inicijaliziraj">
+                </form>   
+            </div>
+        </main>
+    <footer class="noP">
+        <div>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img src="/slike/cc_by2.png" alt="CC BY" width="50" height="50">
+            </a>
+            &copy; 2024 Tin Barbarić
+        </div>
+        <div>
+            <a href="http://validator.w3.org/check?uri=http://spider.foi.hr:12014/ob3" target="_blank"> <br>
+                <img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML5 Validator" width="72" height="72">
+            </a>
+        </div>
+    </footer>
+<script src="/jsk/tbarbaric22_obrazac.js"></script>
+</body>
+</html>

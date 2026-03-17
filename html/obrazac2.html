@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Obrazac</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Obrazac, muzej, html">
+    <meta name="author" content="Tin Barbarić">
+    <link rel="stylesheet" type="text/css" href="/css/tbarbaric22.css">
+    <link rel="stylesheet" type="text/css" href="/css/smartphone.css">
+</head>
+<body>
+        <header class="noP">
+            <a id="logoPocetna" href="/"><img src="/slike/logo.png" alt="porec_logo"></a>
+            <h1>Prirodoslovni muzej Poreč</h1>
+        </header>
+        <nav class="noP">
+            <ul>
+                <li><a href="/">Početna stranica</a></li>
+                <li><a href="/oau">O autoru</a></li>
+                <li><a href="/dok">Dokumentacija</a></li>
+                <li><a href="/gal">Galerija</a></li>
+                <li><a href="/det">Detalji</a></li>
+                <li><a class="trenutno" href="">Obrazac validacije</a></li>
+                <li><a href="/ob3">Obrazac izložba</a></li>
+                <li><a href="/popis">Popis</a></li>
+                <li><a href="/OWT/izlozba">REST servis</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="omz">
+                <form name="obrazac2" id="ob2" class="obr2" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="POST" novalidate>
+                    <h2>Upit za grupni obilazak</h2>
+                    <br>
+                    <p class="error1" id="imeError"></p>
+                    <label for="ime1">Vaše ime:</label>
+                    <input placeholder="ime" type="text" name="ime" id="ime1"> <br> <br>
+                    <p class="error1" id="emailError"></p>
+                    <label for="em">Email: </label>
+                    <input type="email" id="em" name="em" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> <br> <br>
+                    <p class="error1" id="napomeneError"></p>
+                    <p>Posebne napomene:</p>
+                    <textarea id="napomene" name="napomene" cols="30" rows="10"></textarea> <br> <br>
+                    <p class="error1" id="datumError"></p>
+                    <label for="date1">Datum obilaska: </label> 
+                    <input type="date" name="date1" id="date1"> <br> <br>
+                    <p class="error1" id="brLjudiError"></p>
+                    <label for="brLjudi">Veličina grupe: </label> 
+                    <select id="brLjudi" name="brLjudi"> 
+                        <option value="0-10">0-10</option>
+                        <option value="10-30">10-30</option>
+                        <option value="30-60">30-60</option>
+                        <option value="60+">60+</option>
+                    </select> <br> <br>
+                    <p class="error1" id="grError"></p>
+                    <label for="gr">Na koliko manjih grupa biste voljeli podjeliti vašu grupu: </label> 
+                    <input type="number" name="gr" id="gr" max="8" step="2" min="0"> <br> <br>
+                    <p class="error1" id="vdError"></p>
+                    <p>Želim: </p>
+                    <input type="checkbox" name="vd1" id="vd1" value="želi vodiča"> 
+                    <label for="vd1">vodiča</label> <br>
+                    <input type="checkbox" name="vd2" id="vd2" value="želi 2 ili više vodiča"> 
+                    <label for="vd2">2 ili više vodiča</label> <br>
+                    <input type="checkbox" name="vd3" id="vd3" value="ne želi vodiča">
+                    <label for="vd3">ne želim vodiča</label> <br> <br>
+                    <p class="error1" id="rError"></p>
+                    <label for="r1">Koliko se radujem obilasku:</label>
+                    <input type="range" name="r1" id="r1"> <br> <br>
+                    <p class="error1" id="customDdError"></p>
+                    <div class="custom-dropdown">
+                        <button id="dropdown-btn">Select Options</button>
+                        <div id="dropdown-content" class="dropdown-content">
+                            <p>Grupa 1</p>
+                            <label><input type="checkbox" name="group1" value="Option 1"> Option 1</label>
+                            <label><input type="checkbox" name="group1" value="Option 2"> Option 2</label>
+                            <label><input type="checkbox" name="group1" value="Option 3"> Option 3</label>
+                            <p>Grupa 2</p>
+                            <label><input type="checkbox" name="group2" value="Option 4"> Option 4</label>
+                            <label><input type="checkbox" name="group2" value="Option 5"> Option 5</label>
+                            <label><input type="checkbox" name="group2" value="Option 6"> Option 6</label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Predaj upit">
+                    <input type="reset" value="inicijaliziraj">
+                </form>
+            </div>
+        </main>
+    <footer class="noP">
+        <div>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img src="/slike/cc_by2.png" alt="CC BY" width="50" height="50">
+            </a>
+            &copy; 2024 Tin Barbarić
+        </div>
+        <div>
+            <a href="http://validator.w3.org/check?uri=http://spider.foi.hr:12014/ob2" target="_blank"> <br>
+                <img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML5 Validator" width="72" height="72">
+            </a>
+        </div>
+    </footer>
+<script src="jsk/tbarbaric22_obrazac.js"></script>
+</body>
+</html>

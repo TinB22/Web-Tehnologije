@@ -1,0 +1,62 @@
+[
+  {
+    "Naziv primjerka": "Morski konjic",
+    "Opis": "Morski konjici su...",
+    "Godina proizvodnje": 2000,
+    "Kategorija": "Morski konji"
+  },
+  {
+    "Naziv primjerka": "Morska zvijezda",
+    "Opis": "Morske zvijezde su...",
+    "Godina proizvodnje": 2005,
+    "Kategorija": "Morske zvijezde"
+  },
+  {
+    "Naziv primjerka": "Hobotnica",
+    "Opis": "Hobotnice su...",
+    "Godina proizvodnje": 2010,
+    "Kategorija": "Glavonošci"
+  },
+  {
+    "Naziv primjerka": "Morski pas",
+    "Opis": "Morski psi su...",
+    "Godina proizvodnje": 2015,
+    "Kategorija": "Hrupavci"
+  },
+  {
+    "Naziv primjerka": "Kit",
+    "Opis": "Kitovi su...",
+    "Godina proizvodnje": 2020,
+    "Kategorija": "Kitovi"
+  },
+  {
+    "Naziv primjerka": "Morska kornjača",
+    "Opis": "Morske kornjače su...",
+    "Godina proizvodnje": 2021,
+    "Kategorija": "Kornjače"
+  },
+  {
+    "Naziv primjerka": "Rak",
+    "Opis": "Rakovi su...",
+    "Godina proizvodnje": 2022,
+    "Kategorija": "Rakovi"
+  },
+  {
+    "Naziv primjerka": "Morska školjka",
+    "Opis": "Morske školjke su...",
+    "Godina proizvodnje": 2023,
+    "Kategorija": "Školjke"
+  },
+  {
+    "Naziv primjerka": "Morska alga",
+    "Opis": "Morske alge su...",
+    "Godina proizvodnje": 2024,
+    "Kategorija": "Alge"
+  },
+  {
+    "Naziv primjerka": "Morska spužva",
+    "Opis": "Morske spužve su...",
+    "Godina proizvodnje": 2025,
+    "Kategorija": "Spužve"
+  }
+]

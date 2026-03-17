@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Početna stranica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Početna stranica, muzej, html">
+    <meta name="author" content="Tin Barbarić">
+    <link rel="stylesheet" type="text/css" href="/css/tbarbaric22.css">
+    <link id="linkSM1" rel="stylesheet" type="text/css" href="/css/smartphone.css">
+    <link rel="stylesheet" type="text/css" href="/css/printTable.css">
+</head>
+<body>
+        <header class="noP">
+            <div class="cnt1">
+                <div>
+                    <a id="logoPocetna" href="/"><img src="/slike/logo.png" alt="porec_logo"></a>
+                    <h1 id="h11">Prirodoslovni muzej Poreč</h1>
+                </div>
+                <button id="btn1">Prebaci na mobilnu verziju</button>
+            </div>
+        </header>
+        <nav class="noP">
+            <ul class="navLista">
+                <li><a class="trenutno" href="/">Početna stranica</a></li>
+                <li><a href="/oau">O autoru</a></li>
+                <li><a href="/dok">Dokumentacija</a></li>
+                <li><a href="/gal">Galerija</a></li>
+                <li><a href="/det">Detalji</a></li>
+                <li><a href="/ob2">Obrazac validacije</a></li>
+                <li><a href="/ob3">Obrazac izložba</a></li>
+                <li><a href="/popis">Popis</a></li>
+                <li><a href="/OWT/izlozba">REST servis</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="omz1" class="noP">
+                <h3>O muzeju</h3>
+                <p>Prirodoslovni muzej Poreča otvara vrata posjetiteljima u čarobni svijet Istre, regije koja obiluje prirodnim blagom od šarmantnih plaža i tirkiznog mora do netaknute unutrašnjosti s bujnom vegetacijom i izvanrednim geološkim fenomenima. Smješten u samom srcu grada Poreča, muzej nije samo arhiva prirodnih čuda Istre, već i oaza znanja, istraživanja i očuvanja.
+
+                Oduševljeni posjetitelji prvo će biti zapanjeni impresivnom arhitekturom muzeja, koja se savršeno uklapa u okoliš i oživljava duh Istre. Ulaskom kroz vrata, dočekat će ih osvježavajući miris biljaka i zvukovi ptica koji pozivaju na istraživanje.
+                </p> <br>
+                <a id="tbl1" href="#tablica1">Popis izložbenih primjeraka muzeja &#8595;</a>
+            </div>
+            <div id="nlk" class="noP">
+                <h3>Naša lokacija:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.191185207032!2d13.592266115596933!3d45.22568417909998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b5c3cc46bf4ed%3A0xc22cd157aceb4e56!2sPore%C4%8D!5e0!3m2!1sen!2shr!4v1649941972311!5m2!1sen!2shr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div id="vjesti" class="noP">
+                <div id="v1">
+                    <h3>Nagrada</h3>
+                    <p>Prirodoslovni muzej Poreča dobiva prestižnu nagradu za održivost <br> <a href="/detalji">Saznajte više</a></p>
+                    <img class="vjestiImg" src="/slike/vSlika1.jpg" alt="Slika 1" width="400" height="200">
+                </div>
+                <div id="v2">
+                    <h3>Nova postava</h3>
+                    <p>Otvorena nova interaktivna postava o morskim ekosustavima Istre <br> <a href="/detalji">Saznajte više</a></p>
+                    <img class="vjestiImg" src="/slike/vSlika2.jpg" alt="Slika 2" width="400" height="200">
+                </div>
+                <div id="v3">
+                    <h3>Edukacija</h3>
+                    <p>Muzej organizira seriju edukativnih događaja za lokalne škole <br> <a href="/detalji">Saznajte više</a></p>
+                    <img class="vjestiImg" src="/slike/vSlika3.jpg" alt="Slika 3" width="400" height="200">
+                </div>
+            </div>
+
+            <!--Obrazac1-->
+            <div id="omz2" class="noP">
+                <form id="obrazac1" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="POST" novalidate>
+                    <h2>Prijava</h2>
+                    <br>
+                    <label for="user_name">Korisničko ime:</label>
+                    <input type="text" name="user_name" id="user_name" required> <br> <br>
+                    <label for="pswrd">Lozinka: </label>
+                    <input type="password" name="pswrd" id="pswrd" required minlength="6"> <br> <br>
+                    <p>Prijava ili registracija: </p>
+                    <label for="prijava">Prijava</label>
+                    <input type="radio" name="pilir" id="prijava" value="prijava" checked>
+                    <label for="prijavaA">Prijava admina</label>
+                    <input type="radio" name="pilir" id="prijavaA" value="prijavaA">
+                    <label for="reg">Registracija</label>
+                    <input type="radio" name="pilir" id="reg" value="registracija"> <br> <br>
+                    <label for="choices">Odaberite opciju:</label><br>
+                    <select id="choices" name="choices">
+                        <optgroup label="prijava">
+                        <option value="zp1">zaposlenik 1</option>
+                        <option value="zp2">zaposlenik 2</option>
+                        <option value="zp3">zaposlenik 3</option>
+                        </optgroup>
+                        <optgroup label="prijava admin">
+                        <option value="adm1">admin 1</option>
+                        <option value="adm2">admin 2</option>
+                        <option value="adm3">admin 3</option>
+                        </optgroup> 
+                    </select> <br> <br>
+                    <input id="sub1" type="submit" value="Prijava/Registracija">
+                    <input type="reset" value="inicijaliziraj">
+                </form>
+            </div>
+
+            <!--Tablica-->
+            <div id="omz4">
+                <table id="tablica1">
+                    <caption>Popis izložbenih primjeraka muzeja</caption>
+                    <colgroup>
+                        <col style="color: black">
+                        <col span="3" style="color: black">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Naziv primjerka</th>
+                            <th>Opis</th>
+                            <th>Godina proizvodnje</th>
+                            <th>Kategorija</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Morski konjic</td>
+                            <td>Morski konjici su...</td>
+                            <td>2000</td>
+                            <td>Morski konji</td>
+                        </tr>
+                        <tr>
+                            <td>Morska zvijezda</td>
+                            <td>Morske zvijezde su...</td>
+                            <td>2005</td>
+                            <td>Morske zvijezde</td>
+                        </tr>
+                        <tr>
+                            <td>Hobotnica</td>
+                            <td>Hobotnice su...</td>
+                            <td>2010</td>
+                            <td>Glavonošci</td>
+                        </tr>
+                        <tr>
+                            <td>Morski pas</td>
+                            <td>Morski psi su...</td>
+                            <td>2015</td>
+                            <td>Hrupavci</td>
+                        </tr>
+                        <tr>
+                            <td>Kit</td>
+                            <td>Kitovi su...</td>
+                            <td>2020</td>
+                            <td>Kitovi</td>
+                        </tr>
+                        <tr>
+                            <td>Morska kornjača</td>
+                            <td>Morske kornjače su...</td>
+                            <td>2021</td>
+                            <td>Kornjače</td>
+                        </tr>
+                        <tr>
+                            <td>Rak</td>
+                            <td>Rakovi su...</td>
+                            <td>2022</td>
+                            <td>Rakovi</td>
+                        </tr>
+                        <tr>
+                            <td>Morska školjka</td>
+                            <td>Morske školjke su...</td>
+                            <td>2023</td>
+                            <td>Školjke</td>
+                        </tr>
+                        <tr>
+                            <td>Morska alga</td>
+                            <td>Morske alge su...</td>
+                            <td>2024</td>
+                            <td>Alge</td>
+                        </tr>
+                        <tr>
+                            <td>Morska spužva</td>
+                            <td>Morske spužve su...</td>
+                            <td>2025</td>
+                            <td>Spužve</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Kraj popisa</td>
+                        </tr>
+                    </tfoot>
+                </table>                
+            </div>
+        </main>
+    <footer class="noP">
+        <div>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img src="/slike/cc_by2.png" alt="CC BY" width="50" height="50">
+            </a>
+            &copy; 2024 Tin Barbarić
+        </div>
+        <div>
+            <a href="http://validator.w3.org/check?uri=http://spider.foi.hr:12014/" target="_blank"> <br>
+                <img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML5 Validator" width="72" height="72">
+            </a>
+        </div>
+    </footer>
+<script src="/jsk/tbarbaric22.js"></script>
+</body>
+</html>

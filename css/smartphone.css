@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1000px) {
+    header {
+        align-items: center; 
+        background-color: midnightblue;
+        color: beige;
+        padding: 1.5%;
+        height: auto; 
+    }
+    #btn1 {
+        padding-right: 16%;
+    }
+    header img {
+        max-width: 5%; 
+        max-height: 5%; 
+        margin-left: 0.25%;
+    }
+    #dokH1 {
+        padding-left: 40%;
+        font-size: 180%;
+    }
+    h1 {
+        font-size: 200%; 
+        margin-top: 10px; 
+    }
+    nav ul {
+        padding-top: 10px;
+    }
+    li a {
+        padding: 10px 20px; 
+        font-size: 120%; 
+    }
+    #nlk iframe {
+        width: 100%; 
+    }
+    #omz,
+    #nlk,
+    #vjesti {
+        margin-left: 5%; 
+        margin-right: 5%;
+    }
+    #vjesti {
+        flex-direction: column; 
+    }
+    .vjestiImg {
+        margin: 10px auto; 
+        width: 80%;
+        height: 60%;
+    }
+    #nlk {
+        padding-left: 5%;
+        padding-right: 5%; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .slSM1 {
+        margin-bottom: 5%;
+    }
+    #elDolfo {
+        width: 50%;
+        height: 20%;
+    }
+
+    .cGalerija img:hover {
+        transform: scale(1.3); 
+    }
+    footer {
+        padding: 10px 0; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    table {
+        width: 100%;
+    }
+
+    table th:nth-child(3),
+    table td:nth-child(3),
+    table th:nth-child(4),
+    table td:nth-child(4) {
+        display: none;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Detalji</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Stranica detalja, muzej, html">
+    <meta name="author" content="Tin Barbarić">
+    <link rel="stylesheet" type="text/css" href="/css/tbarbaric22.css">
+    <link rel="stylesheet" type="text/css" href="/css/smartphone.css">
+    <style>
+        @keyframes dolphinAnimation {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(20deg); } 
+            100% { transform: rotate(0deg); }
+        }
+
+        #elDolfo {
+            animation: dolphinAnimation 2s infinite; 
+}
+    </style>
+</head>
+<body>
+        <header>
+            <a id="logoPocetna" href="/"><img src="/slike/logo.png" alt="porec_logo"></a>
+            <h1>Prirodoslovni muzej Poreč</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Početna stranica</a></li>
+                <li><a href="/oau">O autoru</a></li>
+                <li><a href="/dok">Dokumentacija</a></li>
+                <li><a href="/gal">Galerija</a></li>
+                <li><a class="trenutno" href="">Detalji</a></li>
+                <li><a href="/ob2">Obrazac validacije</a></li>
+                <li><a href="/ob3">Obrazac izložba</a></li>
+                <li><a href="/popis">Popis</a></li>
+                <li><a href="/OWT/izlozba">REST servis</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="detaljiMain">
+                <div id="detaljiDiv1">
+                    <h2>Nagrada za Održivost</h2>
+                <p>Prirodoslovni muzej Poreča s ponosom prima prestižnu nagradu za održivost, što je rezultat dugogodišnjeg predanog angažmana u zaštiti okoliša i promicanju ekološke svijesti među posjetiteljima i lokalnom zajednicom. Ova značajna priznanja ne samo da ističu ulogu muzeja kao čuvara prirode Istre, već i potvrđuju njegovu trajnu posvećenost unapređenju održivih praksi. Muzej kontinuirano radi na implementaciji inovativnih rješenja koja minimiziraju ekološki utjecaj njegovih aktivnosti, te potiče druge institucije i pojedince na slične napore.</p>
+                </div>
+                <div id="detaljiDiv2">
+                    <h2>Nova Interaktivna Postava</h2>
+                    <p>Posjetitelji će biti oduševljeni novom interaktivnom postavom u Prirodoslovnom muzeju Poreča, koja je tematski posvećena morskim ekosustavima Istre. Ova revolucionarna postava, rezultat dugotrajnog istraživanja i suradnje s stručnjacima, pruža posjetiteljima jedinstvenu priliku za dublje razumijevanje bogatstva morskog života i njegove važnosti za očuvanje okoliša. Kroz interaktivne eksponate, virtualne simulacije i edukativne programe, posjetitelji će imati priliku istražiti različite aspekte morskog svijeta, od biološke raznolikosti do ekoloških izazova s kojima se suočavaju današnji oceani.</p>
+                    <br> <br>
+                    <iframe id="ifrDetalji" src="https://www.youtube.com/embed/yfyA9kHV24E"  allowfullscreen></iframe>
+
+                    <img id="elDolfo" src="/slike/delfin.png" alt="el_dolfo">
+
+                </div>
+                
+                <div id="detaljiDiv3">
+                    <h2>Edukativni Programi za Lokalne Škole</h2>
+                <p>Prirodoslovni muzej Poreča aktivno sudjeluje u obrazovnim inicijativama namijenjenim lokalnim školama, s ciljem poticanja interes mladih za prirodne znanosti i razvijanja svijesti o važnosti očuvanja okoliša. Kroz seriju edukativnih događaja, radionica i terenskih istraživanja, muzej pruža učenicima i nastavnicima priliku za neposredno iskustvo učenja izvan školskih klupa. Ovi programi, prilagođeni različitim uzrastima i obrazovnim potrebama, osmišljeni su kako bi potaknuli znatiželju, kritičko razmišljanje i aktivno sudjelovanje u zaštiti prirode.</p>
+                </div>
+                
+            </div>
+        </main>
+    <footer>
+        <div>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                <img src="/slike/cc_by2.png" alt="CC BY" width="50" height="50">
+            </a>
+            &copy; 2024 Tin Barbarić
+        </div>
+        <div>
+            <a href="http://validator.w3.org/check?uri=http://spider.foi.hr:12014/det" target="_blank"> <br>
+                <img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML5 Validator" width="72" height="72">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
